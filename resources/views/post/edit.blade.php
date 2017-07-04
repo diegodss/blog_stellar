@@ -10,6 +10,7 @@
 {!! Form::hidden('user_id',Auth::user()->id) !!}
 
 @include('alerts.errors')
+@include('alerts.success')
 
 <div class="form-group">
     {!! Form::label('title', 'Title:') !!}
