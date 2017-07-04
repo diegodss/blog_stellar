@@ -25,7 +25,7 @@
     {!! Form::text('published_at',$post->published_at,['class'=>'form-control', 'readonly'=>'readonly']) !!}
 </div>
 <div class="form-group">
-    {!! Form::label('active', 'Active:') !!}
+    {!! Form::label('active', ' Active Status:') !!}
     {!! Form::checkbox('active', '1', $post->active, ['class'=>'form-control_none', 'id'=>'active', 'data-size'=>'mini']) !!}
 </div>
 <div class="form-group">
