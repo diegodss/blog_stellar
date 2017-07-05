@@ -23,9 +23,7 @@ class PostController extends Controller {
             $posts = Post::all();
         } else {
             $posts = Post::active()->with('user')->get();
-            //$posts = Post::with('user')->get();
         }
-        Log::debug($posts);
         $returnData['posts'] = $posts;
         return View::make('post.index', $returnData);
     }
